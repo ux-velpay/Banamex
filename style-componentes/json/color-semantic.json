@@ -1,0 +1,205 @@
+{
+  "bg": {
+    "surface": {
+      "value": "{neutral.100}",
+      "type": "color"
+    },
+    "page": {
+      "value": "{neutral.50}",
+      "type": "color"
+    },
+    "card": {
+      "value": "{neutral.0}",
+      "type": "color"
+    },
+    "input": {
+      "value": "{neutral.0}",
+      "type": "color"
+    },
+    "tooltip": {
+      "value": "{gray.500}",
+      "type": "color",
+      "_comment": "Token dedicado para tooltip background. Desacoplado de text.primary para evitar colisiones en dark mode."
+    }
+  },
+  "text": {
+    "primary": {
+      "value": "{blue.300}",
+      "type": "color"
+    },
+    "secondary": {
+      "value": "{blue.100}",
+      "type": "color"
+    },
+    "placeholder": {
+      "value": "{gray.300}",
+      "type": "color"
+    },
+    "disabled": {
+      "value": "{gray.200}",
+      "type": "color"
+    },
+    "link": {
+      "value": "{blue.300}",
+      "type": "color"
+    }
+  },
+  "border": {
+    "default": {
+      "value": "{gray.50}",
+      "type": "color"
+    },
+    "strong": {
+      "value": "{gray.100}",
+      "type": "color"
+    },
+    "focus": {
+      "value": "{blue.300}",
+      "type": "color"
+    },
+    "error": {
+      "value": "{red.50}",
+      "type": "color",
+      "_comment": "Color de borde para inputs en estado error. Mismo valor que status.error (foreground rojo). Si se necesita borde más suave, crear border.error-subtle → red.100."
+    },
+    "success": {
+      "value": "{green.50}",
+      "type": "color",
+      "_comment": "Color de borde para inputs en estado success. Mismo valor que status.success (foreground verde)."
+    }
+  },
+  "action": {
+    "primary": {
+      "value": "{blue.300}",
+      "type": "color"
+    },
+    "primary-hover": {
+      "value": "{blue.200}",
+      "type": "color"
+    },
+    "primary-text": {
+      "value": "{neutral.0}",
+      "type": "color"
+    },
+    "secondary": {
+      "value": "{blue.100}",
+      "type": "color"
+    },
+    "secondary-hover": {
+      "value": "{blue.200}",
+      "type": "color"
+    },
+    "secondary-text": {
+      "value": "{blue.300}",
+      "type": "color"
+    },
+    "secondary-text-hover": {
+      "value": "{blue.300}",
+      "type": "color"
+    },
+    "tertiary": {
+      "value": "{neutral.0}",
+      "type": "color"
+    },
+    "tertiary-hover": {
+      "value": "{blue.300}",
+      "type": "color"
+    },
+    "tertiary-border": {
+      "value": "{gray.100}",
+      "type": "color",
+      "_comment": "mapea D0D5DD del diseño original → gray.100 del sistema"
+    },
+    "tertiary-border-hover": {
+      "value": "{gray.200}",
+      "type": "color",
+      "_comment": "borde refuerza presencia en hover sin cambiar el fondo"
+    },
+    "tertiary-text": {
+      "value": "{blue.300}",
+      "type": "color",
+      "_comment": "text.primary — máximo contraste, tono neutro sin tinte purple"
+    },
+    "tertiary-text-hover": {
+      "value": "{blue.300}",
+      "type": "color",
+      "_comment": "texto no cambia en hover — la señal la dan fondo y borde"
+    },
+    "disabled": {
+      "value": "{gray.100}",
+      "type": "color"
+    },
+    "disabled-text": {
+      "value": "{gray.200}",
+      "type": "color"
+    }
+  },
+  "status": {
+    "success": {
+      "value": "{green.50}",
+      "type": "color"
+    },
+    "success-bg": {
+      "value": "{green.100}",
+      "type": "color"
+    },
+    "error": {
+      "value": "{red.50}",
+      "type": "color"
+    },
+    "error-bg": {
+      "value": "{red.100}",
+      "type": "color"
+    },
+    "alert": {
+      "value": "{orange.50}",
+      "type": "color"
+    },
+    "alert-bg": {
+      "value": "{orange.100}",
+      "type": "color"
+    },
+    "info": {
+      "value": "{purple.700}",
+      "type": "color"
+    },
+    "info-bg": {
+      "value": "{purple.50}",
+      "type": "color"
+    }
+  },
+  "chart": {
+    "series-1": {
+      "value": "{blue.300}",
+      "type": "color"
+    },
+    "series-2": {
+      "value": "{blue.200}",
+      "type": "color"
+    },
+    "series-3": {
+      "value": "{blue.300}",
+      "type": "color"
+    },
+    "reference": {
+      "value": "{gray.100}",
+      "type": "color"
+
+    },
+    "fill-opacity": {
+      "value": "0.08",
+      "type": "other",
+      "_comment": "Opacidad para áreas de relleno bajo líneas (area charts). Aplicar sobre series-1/2/3."
+    },
+    "axis": {
+      "value": "{gray.300}",
+      "type": "color",
+      "_comment": "Labels de ejes X e Y. Usa body.sm tipográfico."
+    },
+    "tooltip-bg": {
+      "value": "{neutral.0}",
+      "type": "color",
+      "_comment": "Fondo del tooltip de chart. Shadow: shadow.md."
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "h1": {
+    "fontSize":     { "value": "{fontSize.36}",        "type": "fontSize" },
+    "fontWeight":   { "value": "{fontWeight.bold}",     "type": "fontWeight" },
+    "lineHeight":   { "value": "{lineHeight.tight}",    "type": "lineHeight" },
+    "letterSpacing":{ "value": "{letterSpacing.tighter}","type": "letterSpacing" },
+    "$description": "Page title. Uso único por vista. Hero headings, landing pages."
+  },
+  "h2": {
+    "fontSize":     { "value": "{fontSize.28}",        "type": "fontSize" },
+    "fontWeight":   { "value": "{fontWeight.bold}",     "type": "fontWeight" },
+    "lineHeight":   { "value": "{lineHeight.tight}",    "type": "lineHeight" },
+    "letterSpacing":{ "value": "{letterSpacing.tighter}","type": "letterSpacing" },
+    "$description": "Section heading. Máximo 2–3 por vista."
+  },
+  "h3": {
+    "fontSize":     { "value": "{fontSize.22}",        "type": "fontSize" },
+    "fontWeight":   { "value": "{fontWeight.semibold}", "type": "fontWeight" },
+    "lineHeight":   { "value": "{lineHeight.snug}",     "type": "lineHeight" },
+    "letterSpacing":{ "value": "{letterSpacing.tight}", "type": "letterSpacing" },
+    "$description": "Subsection heading, card titles."
+  },
+  "h4": {
+    "fontSize":     { "value": "{fontSize.17}",        "type": "fontSize" },
+    "fontWeight":   { "value": "{fontWeight.semibold}", "type": "fontWeight" },
+    "lineHeight":   { "value": "{lineHeight.snug}",     "type": "lineHeight" },
+    "letterSpacing":{ "value": "{letterSpacing.normal}","type": "letterSpacing" },
+    "$description": "Tertiary heading, sidebar section titles."
+  },
+  "body": {
+    "base": {
+      "fontSize":     { "value": "{fontSize.16}",        "type": "fontSize" },
+      "fontWeight":   { "value": "{fontWeight.regular}",  "type": "fontWeight" },
+      "lineHeight":   { "value": "{lineHeight.normal}",   "type": "lineHeight" },
+      "letterSpacing":{ "value": "{letterSpacing.normal}","type": "letterSpacing" },
+      "$description": "Texto de cuerpo estándar. Uso por defecto en párrafos, descripciones."
+    },
+    "sm": {
+      "fontSize":     { "value": "{fontSize.14}",        "type": "fontSize" },
+      "fontWeight":   { "value": "{fontWeight.regular}",  "type": "fontWeight" },
+      "lineHeight":   { "value": "{lineHeight.normal}",   "type": "lineHeight" },
+      "letterSpacing":{ "value": "{letterSpacing.normal}","type": "letterSpacing" },
+      "$description": "Helper text, mensajes de error, texto secundario bajo inputs. También usado en tooltips y descripciones de banners."
+    },
+    "lg": {
+      "fontSize":     { "value": "{fontSize.17}",        "type": "fontSize" },
+      "fontWeight":   { "value": "{fontWeight.regular}",  "type": "fontWeight" },
+      "lineHeight":   { "value": "{lineHeight.relaxed}",  "type": "lineHeight" },
+      "letterSpacing":{ "value": "{letterSpacing.normal}","type": "letterSpacing" },
+      "$description": "Lectura larga — artículos, onboarding, texto de modales de contenido."
+    },
+    "dense": {
+      "fontSize":     { "value": "{fontSize.15}",        "type": "fontSize" },
+      "fontWeight":   { "value": "{fontWeight.regular}",  "type": "fontWeight" },
+      "lineHeight":   { "value": "{lineHeight.normal}",   "type": "lineHeight" },
+      "letterSpacing":{ "value": "{letterSpacing.normal}","type": "letterSpacing" },
+      "$description": "Body intermedio para interfaces densas de información (dashboards, sidebars, listas compactas). Usar cuando body.base ocupa demasiado espacio pero body.sm resulta demasiado pequeño."
+    },
+    "overline": {
+      "fontSize":     { "value": "{fontSize.11}",         "type": "fontSize" },
+      "fontWeight":   { "value": "{fontWeight.semibold}",  "type": "fontWeight" },
+      "lineHeight":   { "value": "{lineHeight.snug}",      "type": "lineHeight" },
+      "letterSpacing":{ "value": "{letterSpacing.widest}", "type": "letterSpacing" },
+      "textTransform": { "value": "uppercase",             "type": "other" },
+      "$description": "Eyebrow text, category labels encima de card titles, section dividers. Siempre en mayúsculas con tracking amplio."
+    }
+  },
+  "component": {
+    "label": {
+      "fontSize":     { "value": "{fontSize.13}",        "type": "fontSize" },
+      "fontWeight":   { "value": "{fontWeight.medium}",   "type": "fontWeight" },
+      "lineHeight":   { "value": "{lineHeight.snug}",     "type": "lineHeight" },
+      "letterSpacing":{ "value": "{letterSpacing.wide}",  "type": "letterSpacing" },
+      "$description": "Labels de inputs y formularios. Encima del campo, color text.primary."
+    },
+    "badge": {
+      "fontSize":     { "value": "{fontSize.11}",         "type": "fontSize" },
+      "fontWeight":   { "value": "{fontWeight.semibold}",  "type": "fontWeight" },
+      "lineHeight":   { "value": "{lineHeight.snug}",      "type": "lineHeight" },
+      "letterSpacing":{ "value": "{letterSpacing.wide}",   "type": "letterSpacing" },
+      "$description": "Status badges, tags, chips. Altura mínima 20px. Siempre acompaña color con icono o texto."
+    },
+    "button": {
+      "fontSize":     { "value": "{fontSize.14}",        "type": "fontSize" },
+      "fontWeight":   { "value": "{fontWeight.semibold}", "type": "fontWeight" },
+      "lineHeight":   { "value": "{lineHeight.snug}",     "type": "lineHeight" },
+      "letterSpacing":{ "value": "{letterSpacing.wide}",  "type": "letterSpacing" },
+      "$description": "Texto de todos los botones (primary, secondary, tertiary, ghost). El tracking ancho mejora la legibilidad a tamaños pequeños."
+    },
+    "price": {
+      "fontSize":         { "value": "{fontSize.36}",         "type": "fontSize" },
+      "fontWeight":       { "value": "{fontWeight.bold}",      "type": "fontWeight" },
+      "lineHeight":       { "value": "{lineHeight.tight}",     "type": "lineHeight" },
+      "letterSpacing":    { "value": "{letterSpacing.tighter}","type": "letterSpacing" },
+      "fontVariantNumeric": { "value": "tabular-nums",         "type": "other" },
+      "$description": "Excepción intencional fuera de la escala modular. Solo para precios en contextos de alta prominencia (pricing pages, checkout hero). tabular-nums evita desplazamiento visual al actualizar valores."
+    },
+    "price-sm": {
+      "fontSize":         { "value": "{fontSize.22}",         "type": "fontSize" },
+      "fontWeight":       { "value": "{fontWeight.bold}",      "type": "fontWeight" },
+      "lineHeight":       { "value": "{lineHeight.snug}",      "type": "lineHeight" },
+      "letterSpacing":    { "value": "{letterSpacing.tight}",  "type": "letterSpacing" },
+      "fontVariantNumeric": { "value": "tabular-nums",         "type": "other" },
+      "$description": "Precio en cards de transacción, resúmenes, balances secundarios."
+    },
+    "price-xs": {
+      "fontSize":         { "value": "{fontSize.14}",         "type": "fontSize" },
+      "fontWeight":       { "value": "{fontWeight.semibold}",  "type": "fontWeight" },
+      "lineHeight":       { "value": "{lineHeight.snug}",      "type": "lineHeight" },
+      "letterSpacing":    { "value": "{letterSpacing.normal}", "type": "letterSpacing" },
+      "fontVariantNumeric": { "value": "tabular-nums",         "type": "other" },
+      "$description": "Precio en filas de tabla, listas de transacciones. tabular-nums es obligatorio para mantener columnas alineadas al cambiar valores."
+    },
+    "nav": {
+      "fontSize":     { "value": "{fontSize.14}",        "type": "fontSize" },
+      "fontWeight":   { "value": "{fontWeight.medium}",   "type": "fontWeight" },
+      "lineHeight":   { "value": "{lineHeight.snug}",     "type": "lineHeight" },
+      "letterSpacing":{ "value": "{letterSpacing.normal}","type": "letterSpacing" },
+      "$description": "Items de navegación — top nav, sidebar, tabs."
+    },
+    "table-header": {
+      "fontSize":     { "value": "{fontSize.12}",         "type": "fontSize" },
+      "fontWeight":   { "value": "{fontWeight.semibold}",  "type": "fontWeight" },
+      "lineHeight":   { "value": "{lineHeight.snug}",      "type": "lineHeight" },
+      "letterSpacing":{ "value": "{letterSpacing.wider}",  "type": "letterSpacing" },
+      "textTransform": { "value": "uppercase",             "type": "other" },
+      "$description": "Headers de columnas en tablas. Color text.secondary."
+    },
+    "table-cell": {
+      "fontSize":         { "value": "{fontSize.14}",        "type": "fontSize" },
+      "fontWeight":       { "value": "{fontWeight.regular}",  "type": "fontWeight" },
+      "lineHeight":       { "value": "{lineHeight.snug}",     "type": "lineHeight" },
+      "letterSpacing":    { "value": "{letterSpacing.normal}","type": "letterSpacing" },
+      "fontVariantNumeric": { "value": "tabular-nums",        "type": "other" },
+      "$description": "Contenido de celdas en tablas. Color text.primary. tabular-nums aplicado por defecto — las columnas numéricas no se desplazan al cambiar valores."
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "fontFamily": {
+    "base": {
+      "value": "'IBM Plex Sans', sans-serif",
+      "type": "fontFamily",
+      "$description": "Única familia tipográfica del sistema. Weights disponibles: 400, 500, 600, 700."
+    },
+    "mono": {
+      "value": "'IBM Plex Mono'",
+      "type": "fontFamily",
+      "$description": "Uso exclusivo para code snippets, tokens, valores técnicos."
+    }
+  },
+  "fontWeight": {
+    "regular": {
+      "value": "400",
+      "type": "fontWeight",
+      "$description": "Body text, helper text, descripciones."
+    },
+    "medium": {
+      "value": "500",
+      "type": "fontWeight",
+      "$description": "Labels, navegación, texto secundario con énfasis."
+    },
+    "semibold": {
+      "value": "600",
+      "type": "fontWeight",
+      "$description": "Headings intermedios, badges, botones."
+    },
+    "bold": {
+      "value": "700",
+      "type": "fontWeight",
+      "$description": "Headings principales, énfasis fuerte, precios."
+    }
+  },
+  "fontSize": {
+    "11": {
+      "value": "11px",
+      "type": "fontSize",
+      "$description": "Badges, overline, captions más pequeñas."
+    },
+    "12": {
+      "value": "12px",
+      "type": "fontSize",
+      "$description": "Helper text, etiquetas auxiliares."
+    },
+    "13": {
+      "value": "13px",
+      "type": "fontSize",
+      "$description": "Labels de componentes, texto de inputs pequeños."
+    },
+    "14": {
+      "value": "14px",
+      "type": "fontSize",
+      "$description": "Body small, texto secundario, labels de formulario."
+    },
+    "15": {
+      "value": "15px",
+      "type": "fontSize",
+      "$description": "Body denso — interfaces con alta densidad de información (dashboards, sidebars). Ver body.dense en typography-semantic.json."
+    },
+    "16": {
+      "value": "16px",
+      "type": "fontSize",
+      "$description": "Body base. Tamaño de referencia (1rem)."
+    },
+    "17": {
+      "value": "17px",
+      "type": "fontSize",
+      "$description": "Body large — lectura cómoda en contextos amplios."
+    },
+    "22": {
+      "value": "22px",
+      "type": "fontSize",
+      "$description": "Heading small, subheadings de sección. También usado en component.price-sm."
+    },
+    "28": {
+      "value": "28px",
+      "type": "fontSize",
+      "$description": "Heading medium, títulos de página."
+    },
+    "36": {
+      "value": "36px",
+      "type": "fontSize",
+      "$description": "Heading large, hero headings, component.price. Excepción intencional fuera de la escala modular — solo para máximo énfasis visual."
+    }
+  },
+  "lineHeight": {
+    "tight": {
+      "value": "1.15",
+      "type": "lineHeight",
+      "$description": "Headings grandes (28px+). Evita gaps excesivos entre líneas."
+    },
+    "snug": {
+      "value": "1.3",
+      "type": "lineHeight",
+      "$description": "Headings pequeños, labels, badges."
+    },
+    "normal": {
+      "value": "1.5",
+      "type": "lineHeight",
+      "$description": "Body text estándar."
+    },
+    "relaxed": {
+      "value": "1.625",
+      "type": "lineHeight",
+      "$description": "Lectura larga — artículos, descripciones extensas."
+    }
+  },
+  "letterSpacing": {
+    "tighter": {
+      "value": "-0.04em",
+      "type": "letterSpacing",
+      "$description": "Headings grandes (28px+). Compensa el spacing óptico de texto grande. NOTA: valores ya en em — no convertir desde Figma % si se lee este archivo directamente."
+    },
+    "tight": {
+      "value": "-0.02em",
+      "type": "letterSpacing",
+      "$description": "Headings medianos (22px). NOTA: valores ya en em."
+    },
+    "normal": {
+      "value": "0",
+      "type": "letterSpacing",
+      "$description": "Body text. Sin ajuste."
+    },
+    "wide": {
+      "value": "0.025em",
+      "type": "letterSpacing",
+      "$description": "Labels pequeños, texto de UI compacta."
+    },
+    "wider": {
+      "value": "0.05em",
+      "type": "letterSpacing",
+      "$description": "Texto en ALL CAPS."
+    },
+    "widest": {
+      "value": "0.06em",
+      "type": "letterSpacing",
+      "$description": "Overline — siempre acompaña texto en mayúsculas."
+    }
+  },
+  "fontVariantNumeric": {
+    "tabular": {
+      "value": "tabular-nums",
+      "type": "other",
+      "$description": "Números de ancho fijo. Obligatorio en columnas de montos, precios y cualquier cifra que cambie en tiempo real. Evita el desplazamiento lateral del texto al actualizar valores. Aplicado por defecto en component.table-cell, component.price, component.price-sm y component.price-xs."
+    },
+    "normal": {
+      "value": "normal",
+      "type": "other",
+      "$description": "Números proporcionales. Uso en texto corrido donde los números no se alinean en columna."
+    }
+  }
+}
