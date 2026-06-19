@@ -934,32 +934,81 @@
 
   </div>
 </section>
-<section data-label="Cómo funciona" data-screen-label="05" data-speaker-notes="El flujo completo en tres pasos: el emisor genera la referencia por API, el cliente paga en efectivo en un punto afiliado, y el emisor recibe confirmación por webhook con fondos al día siguiente." style="font-family:'IBM Plex Sans',sans-serif;background:#F9FAFB;color:#003746;padding:80px 110px;display:flex;flex-direction:column;box-sizing:border-box;overflow:hidden;">
-    <div style="display:flex;flex-direction:column;gap:12px;">
-      <span style="font-size:24px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#177287;">Banamex Pay · Flujo</span>
-      <h2 style="font-size:60px;line-height:1.08;letter-spacing:-0.025em;font-weight:700;margin:0;">Cómo funciona en tres pasos</h2>
-    </div>
-    <div style="flex:1;display:flex;align-items:center;gap:24px;margin-top:48px;">
-      <div style="flex:1;background:#fff;border:1px solid #E5E7EB;border-radius:18px;padding:44px;align-self:stretch;display:flex;flex-direction:column;">
-        <div style="font-size:24px;font-weight:700;color:#fff;background:#003746;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:28px;">1</div>
-        <div style="font-size:32px;font-weight:700;letter-spacing:-0.01em;margin-bottom:14px;">Genera la referencia</div>
-        <p style="font-size:25px;line-height:1.5;color:#4B5563;margin:0;">Llama a la API con el monto y la vigencia. Obtienes una referencia única de hasta 35 dígitos en milisegundos.</p>
-      </div>
-      <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#A0D6E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-      <div style="flex:1;background:#fff;border:1px solid #E5E7EB;border-radius:18px;padding:44px;align-self:stretch;display:flex;flex-direction:column;">
-        <div style="font-size:24px;font-weight:700;color:#fff;background:#003746;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:28px;">2</div>
-        <div style="font-size:32px;font-weight:700;letter-spacing:-0.01em;margin-bottom:14px;">El cliente paga en efectivo</div>
-        <p style="font-size:25px;line-height:1.5;color:#4B5563;margin:0;">Acude a cualquier punto afiliado — sucursal, corresponsal o tienda — y liquida con su referencia (QR o código).</p>
-      </div>
-      <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#A0D6E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-      <div style="flex:1;background:#003746;border-radius:18px;padding:44px;align-self:stretch;display:flex;flex-direction:column;color:#fff;">
-        <div style="font-size:24px;font-weight:700;color:#003746;background:#2DDC8E;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:28px;">3</div>
-        <div style="font-size:32px;font-weight:700;letter-spacing:-0.01em;margin-bottom:14px;">Recibes confirmación</div>
-        <p style="font-size:25px;line-height:1.5;color:#CAE8EE;margin:0;">Webhook en tiempo real con firma HMAC. Fondos concentrados en tu cuenta Banamex al día siguiente.</p>
-      </div>
-    </div>
-  </section>
+<section data-label="Cómo funciona" data-screen-label="12" style="font-family:'IBM Plex Sans',sans-serif;background:#F9FAFB;color:#003746;padding:68px 110px;display:flex;flex-direction:column;box-sizing:border-box;overflow:hidden;">
+  <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:48px;">
+    <span style="font-size:24px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#177287;">Banamex Pay · Flujo</span>
+    <h2 style="font-size:56px;line-height:1.08;letter-spacing:-0.025em;font-weight:700;margin:0;">Experiencia de usuario</h2>
+  </div>
 
+  <!-- Fila 1 -->
+  <div style="display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:16px;margin-bottom:40px;">
+
+    <!-- Paso 1 -->
+    <div style="background:#fff;border:1px solid #E5E7EB;border-radius:18px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+      <div style="width:72px;height:72px;border-radius:16px;background:#CAE8EE;display:flex;align-items:center;justify-content:center;">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#003746" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="3" height="3"/><rect x="19" y="14" width="2" height="2"/><rect x="14" y="19" width="2" height="2"/><rect x="18" y="19" width="3" height="2"/><rect x="19" y="17" width="2" height="1"/></svg>
+      </div>
+      <p style="font-size:20px;line-height:1.45;color:#4B5563;margin:0;">Cliente recibe su <strong style="color:#003746;font-weight:600;">referencia de pago</strong> Banamex Pay</p>
+    </div>
+
+    <!-- Flecha -->
+    <svg width="40" height="24" viewBox="0 0 40 24" fill="none"><path d="M0 12h34M26 4l8 8-8 8" stroke="#A0D6E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+    <!-- Paso 2 -->
+    <div style="background:#fff;border:1px solid #E5E7EB;border-radius:18px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+      <div style="width:72px;height:72px;border-radius:16px;background:#CAE8EE;display:flex;align-items:center;justify-content:center;">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#003746" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <p style="font-size:20px;line-height:1.45;color:#4B5563;margin:0;">Acude a una <strong style="color:#003746;font-weight:600;">sucursal de la red Banamex</strong> con su referencia</p>
+    </div>
+
+    <!-- Flecha -->
+    <svg width="40" height="24" viewBox="0 0 40 24" fill="none"><path d="M0 12h34M26 4l8 8-8 8" stroke="#A0D6E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+    <!-- Paso 3 -->
+    <div style="background:#003746;border-radius:18px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;box-shadow:0 8px 24px rgba(0,55,70,0.18);">
+      <div style="width:72px;height:72px;border-radius:16px;background:rgba(160,214,226,0.18);display:flex;align-items:center;justify-content:center;">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#A0D6E2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h2M3 12h2M3 17h2M7 3v2M12 3v2M17 3v2M7 19v2M12 19v2M17 19v2M19 7h2M19 12h2M19 17h2"/><rect x="7" y="7" width="10" height="10" rx="1"/></svg>
+      </div>
+      <p style="font-size:20px;line-height:1.45;color:#A0D6E2;margin:0;">Se escanea el <strong style="color:#fff;font-weight:600;">código QR / barras</strong> o captura la referencia</p>
+    </div>
+  </div>
+
+  <!-- Fila 2 -->
+  <div style="display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:16px;">
+
+    <!-- Paso 4 -->
+    <div style="background:#fff;border:1px solid #E5E7EB;border-radius:18px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+      <div style="width:72px;height:72px;border-radius:16px;background:#CAE8EE;display:flex;align-items:center;justify-content:center;">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#003746" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h2M11 8h2M15 8h2M7 11h2M11 11h2"/></svg>
+      </div>
+      <p style="font-size:20px;line-height:1.45;color:#4B5563;margin:0;">El POS regresa el <strong style="color:#003746;font-weight:600;">monto y vencimiento</strong></p>
+    </div>
+
+    <!-- Flecha -->
+    <svg width="40" height="24" viewBox="0 0 40 24" fill="none"><path d="M0 12h34M26 4l8 8-8 8" stroke="#A0D6E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+    <!-- Paso 5 -->
+    <div style="background:#fff;border:1px solid #E5E7EB;border-radius:18px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+      <div style="width:72px;height:72px;border-radius:16px;background:#CAE8EE;display:flex;align-items:center;justify-content:center;">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#003746" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      </div>
+      <p style="font-size:20px;line-height:1.45;color:#4B5563;margin:0;">Se realiza el <strong style="color:#003746;font-weight:600;">cobro del servicio</strong> en efectivo</p>
+    </div>
+
+    <!-- Flecha -->
+    <svg width="40" height="24" viewBox="0 0 40 24" fill="none"><path d="M0 12h34M26 4l8 8-8 8" stroke="#A0D6E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+    <!-- Paso 6 -->
+    <div style="background:#fff;border:1px solid #E5E7EB;border-radius:18px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+      <div style="width:72px;height:72px;border-radius:16px;background:#CAE8EE;display:flex;align-items:center;justify-content:center;">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#003746" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="12" y2="17"/></svg>
+      </div>
+      <p style="font-size:20px;line-height:1.45;color:#4B5563;margin:0;">Se entrega el <strong style="color:#003746;font-weight:600;">ticket</strong> como comprobante del pago en línea</p>
+    </div>
+
+  </div>
+</section>
 <section data-label="Capítulo 4 · Integración" style="font-family:'IBM Plex Sans',sans-serif;background:#003746;color:#fff;padding:92px 110px;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;overflow:hidden;position:relative;">
   <div style="position:absolute;left:0;top:0;bottom:0;width:8px;background:#A0D6E2;"></div>
   <div style="font-size:200px;font-weight:700;letter-spacing:-0.04em;color:rgba(160,214,226,0.14);line-height:1;margin-bottom:-10px;">04</div>
